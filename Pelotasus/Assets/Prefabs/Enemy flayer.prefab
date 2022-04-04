@@ -124,7 +124,8 @@ MonoBehaviour:
   rangoDeVision: 0
   rangoDeRevarsa: 0
   rangoDeDisparo: 0
-  player: {fileID: 0}
+  mirandoDerecha: 1
+  player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
   rb2D: {fileID: 2318521270908442227}
 --- !u!95 &1735251438728749875
 Animator:

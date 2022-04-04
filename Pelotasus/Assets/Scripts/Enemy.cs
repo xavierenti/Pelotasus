@@ -10,12 +10,15 @@ public class Enemy : MonoBehaviour
     public float rangoDeVision;
     public float rangoDeRevarsa;
     public float rangoDeDisparo;
+    public bool mirandoDerecha;
     public Transform player;
     public Rigidbody2D rb2D;
        
     // Update is called once per frame
     void Update()
     {
+        MirarAlPlayer();
+
         distanciaDelJugador = Vector2.Distance(player.position, rb2D.position);
         if(distanciaDelJugador < rangoDeVision && distanciaDelJugador > rangoDeRevarsa && distanciaDelJugador > rangoDeDisparo)
         {
@@ -35,6 +38,28 @@ public class Enemy : MonoBehaviour
             Vector2 nuevaPos = Vector2.MoveTowards(rb2D.position, objetivo, velocidadDeReversa * Time.deltaTime);
             rb2D.MovePosition(nuevaPos);
         }
+    }
+
+    public void MirarAlPlayer()
+    {
+        Vector3 girado = transform.localScale;
+        if(distanciaDelJugador < rangoDeVision)
+        {
+            if (transform.position.x > player.position.x && !mirandoDerecha)
+            {
+                Girar();
+                mirandoDerecha = true;
+            }
+            else if (transform.position.x < player.position.x && !mirandoDerecha)
+            {
+                Girar();
+                mirandoDerecha = false;
+            }
+        }
+    }
+    public void Girar()
+    {
+        transform.Rotate(0, 180, 0);
     }
 
     private void OnDrawGizmos()
