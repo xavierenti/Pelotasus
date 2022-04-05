@@ -5,21 +5,71 @@ using UnityEngine;
 public class PersonMove : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float MovementSpeed = 1;
-    public float JumpForce = 1;
+    public float MoveSpeed;
+    float xInput, yInput;
 
-    private Rigidbody2D _rigidbody;
+    Rigidbody2D rb;
 
-    
-    // Update is called once per frame
+    SpriteRenderer sp;
+
+    public float jumpForce;
+    bool isGrounded;
+    public Transform groundCheck;
+    public LayerMask groundlayer;
+
+
     void Update()
     {
-        var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            if (isGrounded)
+            {
+                Jump();
+            }
+            
         }
     }
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        sp = GetComponent<SpriteRenderer>();
+    }
+
+    private void FixedUpdate()
+    {
+        xInput = Input.GetAxis("Horizontal");
+
+        transform.Translate(xInput * MoveSpeed, yInput * MoveSpeed, 0);
+
+        PlatformerMove();
+        FlipPlayer();
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
+
+    }
+
+    void Jump()
+    {
+        rb.velocity = Vector2.up * jumpForce;
+    }
+
+    void PlatformerMove()
+    {
+        rb.velocity = new Vector2(MoveSpeed * xInput, rb.velocity.y);
+    }
+
+    void FlipPlayer()
+    {
+        if(rb.velocity.x > -0.5f)
+        {
+            sp.flipX = true;
+        }
+        if(rb.velocity.x <  0.5f)
+        {
+            sp.flipX = false;
+        }
+    }
+
+    
 }

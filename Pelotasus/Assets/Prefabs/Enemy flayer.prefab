@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2318521270908442227}
   - component: {fileID: 5787336106571376149}
   - component: {fileID: 1735251438728749875}
+  - component: {fileID: 6313469204357194517}
   m_Layer: 0
   m_Name: Enemy flayer
   m_TagString: Enemy
@@ -118,13 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289a339b8128c364d9008707633d61d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0
-  velocidadDeReversa: 0
-  distanciaDelJugador: 0
-  rangoDeVision: 0
-  rangoDeRevarsa: 0
-  rangoDeDisparo: 0
-  mirandoDerecha: 1
+  velocidad: 10
   player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
   rb2D: {fileID: 2318521270908442227}
 --- !u!95 &1735251438728749875
@@ -146,3 +141,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &6313469204357194517
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488993213170799792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0923949}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1.6, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6, y: 1.0546447}
+  m_EdgeRadius: 0

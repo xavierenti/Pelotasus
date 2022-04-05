@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7667485495658921900}
   - component: {fileID: 2531659585625932235}
   - component: {fileID: 8950940626907834855}
-  - component: {fileID: 5291871953450954109}
+  - component: {fileID: 5815347960859456828}
   m_Layer: 0
   m_Name: Enemy StBully
   m_TagString: Enemy
@@ -132,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3175728, y: 1.6360388}
   m_EdgeRadius: 0
---- !u!114 &5291871953450954109
+--- !u!114 &5815347960859456828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,15 +141,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8359809200162133315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d29e8b55d5d75e43b4c78e64c3c016a, type: 3}
+  m_Script: {fileID: 11500000, guid: 289a339b8128c364d9008707633d61d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
-  velocidadDeReversa: 0
-  distanciaDelJugador: 0
-  rangoDeVision: 100
-  rangoDeRevarsa: 0
-  rangoDeDisparo: 0
-  mirandoDerecha: 0
+  velocidad: 10
   player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
   rb2D: {fileID: 7667485495658921900}
