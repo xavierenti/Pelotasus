@@ -61,15 +61,22 @@ public class PersonMove : MonoBehaviour
 
     void FlipPlayer()
     {
-        if(rb.velocity.x > -0.5f)
+        if(rb.velocity.x > -0.01f)
         {
             sp.flipX = true;
         }
-        if(rb.velocity.x <  0.5f)
+        if(rb.velocity.x <  0.01f)
         {
             sp.flipX = false;
         }
     }
 
-    
+    private void OnColliderEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
 }
