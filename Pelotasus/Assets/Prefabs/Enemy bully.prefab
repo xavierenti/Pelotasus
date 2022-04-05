@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 9058598646096515562}
   - component: {fileID: 7552289470432300284}
   - component: {fileID: 4552712712462933913}
-  - component: {fileID: 7530173303404239591}
   - component: {fileID: -3086046949180783324}
+  - component: {fileID: 5797746806593086917}
   m_Layer: 0
   m_Name: Enemy bully
   m_TagString: Enemy
@@ -106,21 +106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7530173303404239591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4985000530648925618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289a339b8128c364d9008707633d61d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 10
-  player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
-  rb2D: {fileID: 4552712712462933913}
 --- !u!61 &-3086046949180783324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +132,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3305095, y: 1.611808}
   m_EdgeRadius: 0
+--- !u!114 &5797746806593086917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4985000530648925618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bfb2fd15ab0d343af08e0900623366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6

@@ -46,6 +46,7 @@ public class waveSpawner : MonoBehaviour
             if (!EnemyIsAlive())
             {
                 WaveCompleted();
+                WaveScript.waveValue += 1;
             }
             else
             {

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8075071942304110231}
   - component: {fileID: 7078753614471563979}
   - component: {fileID: 2318521270908442227}
-  - component: {fileID: 5787336106571376149}
   - component: {fileID: 1735251438728749875}
   - component: {fileID: 6313469204357194517}
+  - component: {fileID: 6566000602885373732}
   m_Layer: 0
   m_Name: Enemy flayer
   m_TagString: Enemy
@@ -107,21 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5787336106571376149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8488993213170799792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289a339b8128c364d9008707633d61d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 10
-  player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
-  rb2D: {fileID: 2318521270908442227}
 --- !u!95 &1735251438728749875
 Animator:
   serializedVersion: 3
@@ -167,3 +152,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.0546447}
   m_EdgeRadius: 0
+--- !u!114 &6566000602885373732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488993213170799792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bfb2fd15ab0d343af08e0900623366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7759011465756558481}
   - component: {fileID: 8805278250168371950}
   - component: {fileID: 1024194002916395167}
-  - component: {fileID: 3087196088379741918}
   - component: {fileID: 267991773408044730}
+  - component: {fileID: 2950258087401868039}
   m_Layer: 0
   m_Name: Enemy Teacher
   m_TagString: Enemy
@@ -81,21 +81,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3087196088379741918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300009966687412021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289a339b8128c364d9008707633d61d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 10
-  player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
-  rb2D: {fileID: 1024194002916395167}
 --- !u!212 &267991773408044730
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -147,3 +132,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2950258087401868039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300009966687412021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bfb2fd15ab0d343af08e0900623366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5

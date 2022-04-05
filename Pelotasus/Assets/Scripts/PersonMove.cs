@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PersonMove : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -47,6 +47,11 @@ public class PersonMove : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
 
+        if(this.gameObject == null)
+        {
+            LoadScene("Inici");        
+        }
+
     }
 
     void Jump()
@@ -71,12 +76,17 @@ public class PersonMove : MonoBehaviour
         }
     }
 
-    private void OnColliderEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Enemy")
         {
             Destroy(this.gameObject);
         }
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
 }
