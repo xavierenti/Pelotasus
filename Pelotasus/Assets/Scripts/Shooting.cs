@@ -17,7 +17,6 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        MirarAlMouse();
         lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
@@ -45,29 +44,6 @@ public class Shooting : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
         }
     }
-    public void MirarAlMouse()
-    {
-        Vector3 girado = transform.localScale;
-        if (transform.position.x < Input.mousePosition.x)
-        {
-            if(!mirandoDerecha) 
-            {
-                Girar();
-                mirandoDerecha = true;
-            }
-             
-        }
-        else
-        {
-            if (mirandoDerecha)
-            {
-                Girar();
-                mirandoDerecha = false;
-            }
-        }
-    }
-    public void Girar()
-    {
-        transform.Rotate(0, 180, 0);
-    }
+    
+    
 }
