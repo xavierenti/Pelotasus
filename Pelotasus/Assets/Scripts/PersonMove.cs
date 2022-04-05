@@ -22,5 +22,4 @@ public class PersonMove : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
     }
-
 }

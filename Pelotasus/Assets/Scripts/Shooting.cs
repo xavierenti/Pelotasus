@@ -34,10 +34,8 @@ public class Shooting : MonoBehaviour
                 bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
                 timeBtwShots = startTimeBtwShots;
 
-                
+                Destroy(bulletClone, 3);
             }
-
-
         }
         else
         {
