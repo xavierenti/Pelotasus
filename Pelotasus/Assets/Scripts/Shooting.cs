@@ -48,15 +48,22 @@ public class Shooting : MonoBehaviour
     public void MirarAlMouse()
     {
         Vector3 girado = transform.localScale;
-        if (transform.position.x < Input.mousePosition.x && !mirandoDerecha)
+        if (transform.position.x < Input.mousePosition.x)
         {
-             Girar();
-             mirandoDerecha = true;
+            if(!mirandoDerecha) 
+            {
+                Girar();
+                mirandoDerecha = true;
+            }
+             
         }
-        else if (transform.position.x > Input.mousePosition.x && mirandoDerecha)
+        else
         {
-             Girar();
-             mirandoDerecha = false;
+            if (mirandoDerecha)
+            {
+                Girar();
+                mirandoDerecha = false;
+            }
         }
     }
     public void Girar()

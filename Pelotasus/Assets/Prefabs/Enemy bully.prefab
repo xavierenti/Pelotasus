@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2767219032673154704}
   m_Layer: 0
   m_Name: Enemy bully
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2767219032673154704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,5 +124,5 @@ MonoBehaviour:
   rangoDeRevarsa: 0
   rangoDeDisparo: 0
   mirandoDerecha: 0
-  player: {fileID: 0}
-  rb2D: {fileID: 0}
+  player: {fileID: 2157468600028205277, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
+  rb2D: {fileID: 4552712712462933913}
