@@ -69,4 +69,12 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, rangoDeVision);
         Gizmos.DrawWireSphere(transform.position, rangoDeRevarsa);
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
+
 }
