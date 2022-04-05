@@ -144,10 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d29e8b55d5d75e43b4c78e64c3c016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0
+  velocidad: 5
   velocidadDeReversa: 0
   distanciaDelJugador: 0
-  rangoDeVision: 0
+  rangoDeVision: 100
   rangoDeRevarsa: 0
   rangoDeDisparo: 0
   mirandoDerecha: 0
