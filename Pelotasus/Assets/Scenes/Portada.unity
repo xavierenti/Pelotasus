@@ -4942,7 +4942,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.643099
+  orthographic size: 9.277441
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4984,9 +4984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa55201d9ce03c49bc0a051aeb12961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  HaciaAdelante: 1
-  Smoothing: 0
 --- !u!1 &138047855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,6 +5173,10 @@ PrefabInstance:
       value: 1.7221384
       objectReference: {fileID: 0}
     - target: {fileID: -1542310905387463131, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 816228d2246188941bafd651b0a2ce56, type: 2}
+    - target: {fileID: -1542310905387463131, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
       propertyPath: m_Offset.x
       value: -0.0026456714
       objectReference: {fileID: 0}
@@ -5243,9 +5244,13 @@ PrefabInstance:
       propertyPath: bulletSpeed
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 5285791530741442568, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5505531844565217678, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}
       propertyPath: MoveSpeed
-      value: 0.2
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d3053777e3ef3945a742c01a37adfe7, type: 3}

@@ -36,7 +36,7 @@ public class PersonMove : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         xInput = Input.GetAxis("Horizontal");
 
@@ -47,13 +47,28 @@ public class PersonMove : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
 
-        if(this.gameObject == null)
+    }*/
+
+    private void FixedUpdate()
+    {
+        xInput = Input.GetAxis("Horizontal");
+        //Debug.Log(xInput);
+        if (xInput < 0) 
         {
-            LoadScene("Inici");        
+            rb.velocity = new Vector2(MoveSpeed * -1, rb.velocity.y); 
+        }
+           
+        else if (xInput > 0) 
+        {
+            rb.velocity = new Vector2(MoveSpeed * 1, rb.velocity.y); 
         }
 
-    }
+        Debug.Log(rb.velocity.x);
+        //PlatformerMove();
+        FlipPlayer();
 
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
+    }
     void Jump()
     {
         rb.velocity = Vector2.up * jumpForce;
@@ -78,15 +93,10 @@ public class PersonMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Enemy")
+        if (collision.gameObject.CompareTag ("Enemy"))
         {
-            Destroy(this.gameObject);
+            SceneManager.LoadScene("Inici");
         }
-    }
-
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
     }
 
 }
