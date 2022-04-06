@@ -5076,23 +5076,23 @@ MonoBehaviour:
   waves:
   - name: First
     enemy: {fileID: 8075071942304110231, guid: 89d31e82bbdd03e43851b3f8eda1e2f8, type: 3}
-    count: 1
+    count: 0
     rate: 0.5
   - name: Second
     enemy: {fileID: 8075071942304110231, guid: 89d31e82bbdd03e43851b3f8eda1e2f8, type: 3}
-    count: 2
+    count: 1
     rate: 0.5
   - name: Third
     enemy: {fileID: 8075071942304110231, guid: 89d31e82bbdd03e43851b3f8eda1e2f8, type: 3}
-    count: 3
+    count: 2
     rate: 0.5
   - name: Fourth
     enemy: {fileID: 8075071942304110231, guid: 89d31e82bbdd03e43851b3f8eda1e2f8, type: 3}
-    count: 4
+    count: 3
     rate: 0.5
   - name: Fifth
     enemy: {fileID: 8075071942304110231, guid: 89d31e82bbdd03e43851b3f8eda1e2f8, type: 3}
-    count: 5
+    count: 4
     rate: 0.5
   - name: Sixth
     enemy: {fileID: 8075071942304110231, guid: 89d31e82bbdd03e43851b3f8eda1e2f8, type: 3}
@@ -5740,7 +5740,7 @@ MonoBehaviour:
     rate: 0.5
   - name: Fourth
     enemy: {fileID: 9058598646096515562, guid: e657efca05330bc4bbdc32bf97a16df7, type: 3}
-    count: 5
+    count: 4
     rate: 0.5
   - name: Fifth
     enemy: {fileID: 9058598646096515562, guid: e657efca05330bc4bbdc32bf97a16df7, type: 3}
@@ -5877,19 +5877,19 @@ MonoBehaviour:
   waves:
   - name: First
     enemy: {fileID: 7759011465756558481, guid: bf881ca031c337242b5d8da6bf1bed50, type: 3}
-    count: 1
+    count: 0
     rate: 0.5
   - name: Second
     enemy: {fileID: 7759011465756558481, guid: bf881ca031c337242b5d8da6bf1bed50, type: 3}
-    count: 2
+    count: 1
     rate: 0.5
   - name: Third
     enemy: {fileID: 7759011465756558481, guid: bf881ca031c337242b5d8da6bf1bed50, type: 3}
-    count: 3
+    count: 2
     rate: 0.5
   - name: Fourth
     enemy: {fileID: 7759011465756558481, guid: bf881ca031c337242b5d8da6bf1bed50, type: 3}
-    count: 4
+    count: 3
     rate: 0.5
   - name: Fifth
     enemy: {fileID: 7759011465756558481, guid: bf881ca031c337242b5d8da6bf1bed50, type: 3}

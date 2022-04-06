@@ -17,7 +17,6 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -58,21 +57,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 1556}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2170}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2300}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3160}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -107,21 +106,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 1556}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2170}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2300}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 3160}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3552}
+      Script: {instanceID: 3538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -129,8 +128,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -172,31 +169,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 632}
     - Class: 114
-      Script: {instanceID: 2310}
+      Script: {instanceID: 2300}
     - Class: 114
-      Script: {instanceID: 2354}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 3146}
     - Class: 114
-      Script: {instanceID: 3160}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3436}
     - Class: 114
-      Script: {instanceID: 3450}
+      Script: {instanceID: 4142}
     - Class: 114
-      Script: {instanceID: 4156}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 4200}
+      Script: {instanceID: 5410}
     - Class: 114
-      Script: {instanceID: 5424}
+      Script: {instanceID: 5638}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 22446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -991,4 +988,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Inici.unity
   - Assets/Scenes/Portada.unity
   - Assets/Scenes/Credits.unity
-  playerPath: C:/Users/oriol/OneDrive/Escritorio/BullyBullied/Pelotasus.exe
+  playerPath: D:/ENTI2/GameJam/Ejecutable/Pelotasus.exe
